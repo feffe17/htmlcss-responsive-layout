@@ -147,7 +147,11 @@
 
 @media screen and (min-width: 992px){
     
-    .container-md{
+    .show-min-lg{
+        display: block;
+    }
+
+    .container-lg{
         width: 80%;
         margin: auto;
         max-width: 1000px;
@@ -325,8 +329,8 @@
     }
 }
 
-@media screen and (max-width: 992px){
-    .hide-lg{
+@media screen and (max-width: 991px){
+    .hide-max-lg{
         display: none;
     }
 }
@@ -581,6 +585,20 @@ main{
 
 /* #endregion preview */
 
+/* #region socials */
 
+.social-networks{
+    gap: 3%;
+    margin: 1rem 0;
+}
+
+.social-networks>div{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* #endregion socials */
 
 /* #endregion main */
