@@ -6,11 +6,17 @@
     --primary:#7c69a4;
     --secondary:#f7972e;
     --col-title:#4e3969;
+    --col-bg:#f6f5f3;
 }
 
 /* #endregion colors */
 
 /* #region grid */
+
+.container{
+    width: 100vw;
+    margin: auto;
+}
 
 .row{
     display: flex;
@@ -19,7 +25,9 @@
 
 @media screen and (min-width: 576px){
     
-    
+    header>.container{
+        text-align: center;
+    }
     
     .col-sm-1{
         width: calc((100% / 12)*1);
@@ -72,6 +80,11 @@
 
 @media screen and (min-width: 768px){
     
+    header>.container{
+        text-align: left;
+        padding-left: 1.5rem;
+    }
+
     .col-md-1{
         width: calc((100% / 12)*1);
     }
@@ -284,6 +297,10 @@
     .hide-sm{
         display: none;
     }
+
+    header>.container{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -361,4 +378,33 @@
 
 /* #endregion grid */
 
+/* #region generals */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+/* #endregion generals */
+
 /* #endregion assets */
+
+/* #region header */
+
+
+
+.container>.title-header{
+    font-family: "Nerko One", cursive;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--secondary);
+    font-size: 4rem;
+}
+
+/* #endregion header */
